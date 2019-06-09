@@ -62,20 +62,11 @@ def know_sim(M, i, j):
 #data['entity'] = data['Name'] + data['Site'] + data['Institution'] + data['IP']
 event_num = len(events)
 
+# we show 3 meta-paths as examples.
 meta_paths = [
-#    ['events', 'keywords', 'events'],
-#    ['events', 'topics', 'events'],
-    ['events', 'entities', 'events'], 
-#    ['events', 'keywords', 'keywords', 'events'], 
-#    ['events', 'entities', 'entities', 'events'],
-#    ['events', 'keywords', 'keywords', 'keywords', 'events'],
-#    ['events', 'keywords', 'topics', 'keywords', 'events'],
-#    ['events', 'keywords', 'entities', 'keywords', 'events'],
-#    ['events', 'topics', 'keywords', 'topics', 'events'],
-#    ['events', 'topics', 'entities', 'topics', 'events'], 
-#    ['events', 'entities', 'keywords', 'entities', 'events'],
-#    ['events', 'entities', 'topics', 'entities', 'events'], 
-#    ['events', 'entities', 'entities', 'entities', 'events']
+    ['events', 'topics', 'keywords', 'topics', 'events'],
+    ['events', 'entities', 'keywords', 'entities', 'events'],
+    ['events', 'entities', 'topics', 'entities', 'events']
 ]
 
 print('Start creating matrix ...')
